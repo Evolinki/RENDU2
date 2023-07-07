@@ -1,5 +1,8 @@
 # RENDU2
 
+this project is for extract data from api "panorama-des-festivals"
+
+
 ```bash
 npm install
 ```
