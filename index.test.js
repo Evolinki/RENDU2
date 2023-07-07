@@ -1,7 +1,6 @@
-const getRandomNumber = require("./index");
+const getDataFromAPI = require('./index');
 
-test('it should return an integer', () => {
-    const number = getRandomNumber();
-    expect(number).toBeGreaterThanOrEqual(0);
-    expect(number).toBeLessThanOrEqual(100);
+test("the array should not be empty", async() => {
+    const festivals = await getDataFromAPI();
+    expect(festivals).not.toBeNull();
 })
